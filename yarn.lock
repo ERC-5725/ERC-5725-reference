@@ -67,6 +67,13 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
+"@erc-5725/interface@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/@erc-5725/interface/-/interface-1.1.0.tgz#c60519b485164eb4b89fff63fca19dce86b4d472"
+  integrity sha512-0ARTQEJPw+0WY127leW1qgzYU13EqJNUQHFYhrx/YrDUfQulDsVmRZ95egsgZsZOmhxYCX2oOaHxLspRdOlVhA==
+  dependencies:
+    "@openzeppelin/contracts" "^5.0.0"
+
 "@ethereumjs/common@2.5.0":
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/@ethereumjs/common/-/common-2.5.0.tgz#ec61551b31bef7a69d1dc634d8932468866a4268"
@@ -782,6 +789,11 @@
   version "4.9.3"
   resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-4.9.3.tgz#00d7a8cf35a475b160b3f0293a6403c511099364"
   integrity sha512-He3LieZ1pP2TNt5JbkPA4PNT9WC3gOTOlDcFGJW4Le4QKqwmiNJCRt44APfxMxvq7OugU/cqYuPcSBzOw38DAg==
+
+"@openzeppelin/contracts@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@openzeppelin/contracts/-/contracts-5.0.0.tgz#ee0e4b4564f101a5c4ee398cd4d73c0bd92b289c"
+  integrity sha512-bv2sdS6LKqVVMLI5+zqnNrNU/CA+6z6CmwFXm/MzmOPBRSO5reEJN7z0Gbzvs0/bv/MZZXNklubpwy3v2+azsw==
 
 "@scure/base@~1.1.0":
   version "1.1.2"

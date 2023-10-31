@@ -1,9 +1,9 @@
 # ERC-5725: Transferrable Vesting NFT - Reference Implementation
-[![lint & test](https://github.com/ApeSwapFinance/eip-5725-vesting-nft-implementation/actions/workflows/lint-test.yml/badge.svg)](https://github.com/ApeSwapFinance/eip-5725-vesting-nft-implementation/actions/workflows/lint-test.yml)
+[![lint & test](https://github.com/ERC-5725/ERC-5725-reference/actions/workflows/lint-test.yml/badge.svg)](https://github.com/ERC-5725/ERC-5725-reference/actions/workflows/lint-test.yml)
 [![Docs](https://img.shields.io/badge/docs-%F0%9F%93%84-yellow)](./docs/)
 [![License](https://img.shields.io/badge/License-GPLv3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
-This repository serves as both a reference implementation and an sdk module for EIP-572 Transferrable Vesting NFT Standard.
+This repository serves as both a reference implementation and an sdk module for ERC-5725 Transferrable Vesting NFT Standard.
 
 ## EIP-5725
 
@@ -17,16 +17,16 @@ The [ethers example](./examples/getVestingPeriod.ts) can be run quickly with `ya
 
 This [solidity reference](./contracts/reference/LinearVestingNFT.sol) shows how to extend `ERC5725.sol` to quickly create a transferrable vesting NFT.  
 
-## `@ape.swap/erc-5725` Package Usage
+## `@erc-5725/sdk` Package Usage
 
 ### Installation
 
 Add the ERC-5725 module to your Solidity, Frontend and/or Backend application.
 
 ```shell
-npm install @ape.swap/erc-5725
+npm install @erc-5725/sdk
 # OR
-yarn add @ape.swap/erc-5725
+yarn add @erc-5725/sdk
 ```
 
 ### Usage with Solidity Smart Contracts
@@ -37,7 +37,7 @@ Extend `ERC5725.sol` to quickly create a transferrable Vesting NFT contract impl
 // SPDX-License-Identifier: GPL-3.0
 pragma solidity ^0.8.0;
 
-import "@ape.swap/erc-5725/contracts/ERC5725.sol";
+import "@erc-5725/sdk/contracts/ERC5725.sol";
 
 contract LinearVestingNFT is ERC5725 { ... }
 ```
@@ -52,7 +52,7 @@ By simply passing an RPC provider URL, state from an ERC-5725 contract can be re
 
 ```ts
 // Import ERC-5725 contract helper function
-import { getERC5725Contract, IERC5725_Artifact } from '@ape.swap/erc-5725'
+import { getERC5725Contract, IERC5725_Artifact } from '@erc-5725/sdk'
 const IERC5725_ABI = IERC5725_Artifact.abi
 import { ethers } from 'ethers'
 // Very quickly send txs to/read from type safe ERC-5725 contract
@@ -69,7 +69,7 @@ By simply passing an RPC provider URL, state from an ERC-5725 contract can be re
 
 ```ts
 // Import ERC-5725 contract helper function
-import { getERC5725Contract, IERC5725_Artifact } from '@ape.swap/erc-5725'
+import { getERC5725Contract, IERC5725_Artifact } from '@erc-5725/sdk'
 const IERC5725_ABI = IERC5725_Artifact.abi
 import { ethers } from 'ethers'
 // Pull out the injected ethereum provider from MetaMask in browser
@@ -85,8 +85,8 @@ await tx.wait()
 
 ## Usage via Clone
 
-- `git clone git@github.com:ApeSwapFinance/eip-5725-vesting-nft-implementation.git`
-- `cd eip-5725-vesting-nft-implementation`
+- `git clone git@github.com:ERC-5725/ERC-5725-reference.git`
+- `cd ERC-5725-reference`
 - `yarn`
 - Copy [.env.example](./.env.example) and rename to `.env`
   - Provide the necessary `env` variables before deployment/verification

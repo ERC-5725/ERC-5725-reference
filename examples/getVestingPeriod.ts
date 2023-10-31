@@ -1,4 +1,4 @@
-// import { getERC5725Contract, supportsIERC5725 } from '@ape.swap/erc-5725'
+// import { getERC5725Contract, supportsIERC5725 } from '@erc-5725/sdk'
 import { getERC5725Contract, supportsIERC5725 } from '../src'
 import { ethers } from 'ethers';
 

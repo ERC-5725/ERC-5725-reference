@@ -6,7 +6,8 @@ import "@openzeppelin/contracts/token/ERC20/IERC20.sol";
 import "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol";
 import "@openzeppelin/contracts/access/Ownable.sol";
 import "@openzeppelin/contracts/utils/Counters.sol";
-import "./IERC5725.sol";
+/// @dev Official ERC-5725 interface
+import "@erc-5725/interface/IERC5725.sol";
 
 abstract contract ERC5725 is IERC5725, ERC721 {
     using SafeERC20 for IERC20;
