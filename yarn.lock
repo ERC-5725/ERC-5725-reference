@@ -67,10 +67,10 @@
   dependencies:
     "@jridgewell/trace-mapping" "0.3.9"
 
-"@erc-5725/interface@^1.1.0":
-  version "1.1.0"
-  resolved "https://registry.yarnpkg.com/@erc-5725/interface/-/interface-1.1.0.tgz#c60519b485164eb4b89fff63fca19dce86b4d472"
-  integrity sha512-0ARTQEJPw+0WY127leW1qgzYU13EqJNUQHFYhrx/YrDUfQulDsVmRZ95egsgZsZOmhxYCX2oOaHxLspRdOlVhA==
+"@erc-5725/interfaces@^1.1.2":
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/@erc-5725/interfaces/-/interfaces-1.1.2.tgz#caf6bd1295a341c875b530b8feda005623e0ae5f"
+  integrity sha512-Rd7PyPqrhPFKjZz+2ar3uJaQznPFdCSWBt5XJZ5/FqfeZdPm6BaCzYUxgmSrLlM8X/M87E2K5nI7RWis1piqCQ==
   dependencies:
     "@openzeppelin/contracts" "^5.0.0"
 

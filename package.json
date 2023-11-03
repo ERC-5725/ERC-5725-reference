@@ -89,7 +89,7 @@
     "typescript": ">=4.5.0"
   },
   "dependencies": {
-    "@erc-5725/interface": "^1.1.0",
+    "@erc-5725/interfaces": "^1.1.2",
     "@openzeppelin/contracts": "^4.7.3",
     "@openzeppelin/contracts-upgradeable": "^4.7.3"
   }
